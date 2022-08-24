@@ -2,7 +2,7 @@
 // Напишите программу, которая покажет количество чётных чисел в массиве.
 // [345, 897, 568, 234] -> 2
 
-int[] createArray()
+int[] CreateArray()
 {
     var random = new Random();
     var result = new int[12];
@@ -13,7 +13,7 @@ int[] createArray()
     return result;
 }
 
-int ellEvenNumbers(int[] array) {
+int EvenNumbers(int[] array) {
 var result = 0;
        for (int i = 0; i < array.Length; i++)   
        {
@@ -23,7 +23,7 @@ var result = 0;
        return result;
 }
 
-void printArray(int[] array) {     
+void PrintArray(int[] array) {     
     Console.Write("[");
     for(var i = 0; i < array.Length; i++) {         
         Console.Write(array[i]);  
@@ -34,14 +34,14 @@ void printArray(int[] array) {
         Console.WriteLine(); 
 }   
 
-var array = createArray();
+var array = CreateArray();
 
 Console.WriteLine();
 Console.WriteLine("Сгенерировали массив из 12 элементов в диапазоне от [100, 999]:");
 
-printArray(array);
+PrintArray(array);
 
 Console.WriteLine();
 Console.WriteLine("Количество четных элементов массива: "  );
-Console.WriteLine(ellEvenNumbers(array));
+Console.WriteLine(EvenNumbers(array));
 Console.WriteLine();
